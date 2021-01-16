@@ -59,7 +59,9 @@ class AudioPlayerModel extends BackgroundAudioTask {
   @override
   Future<void> onStop() async {
     // Stop playing audio.
-    _audioPlayer.stop();
+    // await _audioPlayer.stop();
+    await _audioPlayer.dispose(); // does both stopping and disposing
+
     // Broadcast that we've stopped.
     await AudioServiceBackground.setState(
         controls: [],
@@ -102,7 +104,7 @@ class AudioPlayerModel extends BackgroundAudioTask {
         processingState: AudioProcessingState.skippingToNext);
 
     await _audioPlayer.seekToNext();
-    print('next');
+    // print('next');
   }
 
   @override

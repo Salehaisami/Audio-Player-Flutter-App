@@ -70,7 +70,6 @@ Future<void> stop() async => await AudioService.stop();
 //Both of the next functions do nothing when end/beginning of queue is reached
 Future<void> skipToNext() async {
   await AudioService.skipToNext();
-  print('next...');
 }
 
 Future<void> skipToPrev() async {

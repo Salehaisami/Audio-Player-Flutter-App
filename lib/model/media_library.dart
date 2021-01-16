@@ -13,7 +13,7 @@ class MediaLibrary {
       urls.forEach(
               (element) {_items.add(defaultItem.copyWith(id: element));}
               );
-      print(_items);
+      // print(_items);
     }
     // print(_items);
 

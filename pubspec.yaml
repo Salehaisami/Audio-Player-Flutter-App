@@ -18,9 +18,7 @@ dependencies:
   provider:
   equatable: ^1.2.3
 
-  just_audio:
-
-
+  just_audio: ^0.6.5
 
   cupertino_icons: ^1.0.0
 
